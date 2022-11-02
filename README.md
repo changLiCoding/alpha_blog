@@ -25,6 +25,10 @@ Things you may want to cover:
 
 THe frond end: Destroying (deleting) articles
 REST - Representational state transfer -mapping HTTP verbs (get, post, put/patch, delete) to CRUD actions
-
 resources provides REST-ful routes to Rails resources
 show, index, new, create, edit, update, destroy.
+
+DRY dode: do not repeat yourself
+
+- re-facting
+- extract away the redundancies in code
