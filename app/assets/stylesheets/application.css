@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+/* Adding bootstrap without webpack */
+
+@import "bootstrap";
