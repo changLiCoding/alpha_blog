@@ -1,5 +1,6 @@
 /* @import "bootstrap/dist/css/bootstrap"; */
 
+// nav bar css
 .navbar {
 	background-color: black !important;
 	border-radius: 0.75rem;
@@ -17,6 +18,8 @@
 	font-weight: bold;
 }
 
+// home page jumbotron background image
+
 #home-container {
 	margin-top: 25px;
 }
@@ -24,8 +27,23 @@
 	margin: 15px auto;
 }
 .jumbotron-bg {
-	background-image: asset-url("typing.jpg");
+	background-image: asset-url("blog_home.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+// sticky footer
+// html,
+// body {
+// 	height: 100%;
+// }
+
+// #page-content {
+// 	flex: 1 0 auto;
+// }
+
+// #sticky-footer {
+// 	flex-shrink: none;
+// 	border-radius: 12px;
+// }
