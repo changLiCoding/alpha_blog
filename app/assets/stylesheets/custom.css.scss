@@ -1,5 +1,9 @@
 /* @import "bootstrap/dist/css/bootstrap"; */
 
+body {
+	background-color: lightgray !important;
+}
+
 // nav bar css
 .navbar {
 	background-color: black !important;
@@ -34,16 +38,3 @@
 }
 
 // sticky footer
-// html,
-// body {
-// 	height: 100%;
-// }
-
-// #page-content {
-// 	flex: 1 0 auto;
-// }
-
-// #sticky-footer {
-// 	flex-shrink: none;
-// 	border-radius: 12px;
-// }
