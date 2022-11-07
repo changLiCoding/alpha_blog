@@ -83,3 +83,8 @@ one to many associations
 - Article.create(title: "", description: "", user: user_1)
 - user_1.articles.build(title: '', description: '')
 - user_1.articles
+
+git branch and merge
+
+- git checkout -b 'branchName'
+- rails generate migration create_users
