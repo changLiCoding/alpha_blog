@@ -6,8 +6,8 @@
   <div class="row justify-content-md-center mt-5">
     <div class="col-8 mt-4">
       <div class="card text-center shadow mb-5 bg-body rounded">
-        <div class="fst-italic card-header">
-          Created by Chang Li
+        <div class="card-header">
+          Created by <span class="fst-italic"><%= @article.user.username %></span>
         </div>
         <div class="card-body">
           <div class="card-text text-start"><%= simple_format(@article.description.capitalize) %></div>
