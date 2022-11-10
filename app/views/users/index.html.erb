@@ -8,19 +8,19 @@
         <div class="col-8 mt-4">
           <div class="card text-center shadow mb-5 bg-body rounded">
             <div class="card-header">
-              by <span class="fst-italic"><%= article.user.username if article.user %></span>
+              <%= link_to "#{user.username}", user_path(user), class: "fst-italic" %>
             </div>
             <div class="card-body">
-              <h5 class="card-title"><%= link_to article.title.capitalize, article_path(article.id), {class: "text-success text-decoration-none"} %> </h5>
-              <p class="card-text"><%= truncate(article.description.capitalize, length: 70) %></p>
-              <%= link_to "View", article_path(article.id), method: :show, class: "btn btn-outline-success" %>
-              <%= link_to "Edit", edit_article_path(article.id), method: :edit, class: "btn btn-outline-info" %>
-              <%= link_to "Delete", article_path(article.id), data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}, class: "btn btn-outline-danger" %>
+              <h5 class="card-title">
+                <%= link_to gravatar_for(user, size: 150), user %>
+              </h5>
+              <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
+              <%= link_to "View profile", user_path(user), method: :show, class: "btn btn-outline-success" %>
+              <%= link_to "Edit profile", edit_user_path(user), method: :edit, class: "btn btn-outline-info" %>
             </div>
             <div class="card-footer text-muted">
               <small>
-                Created <%= time_ago_in_words(article.created_at) %> ago,
-                edited <%= time_ago_in_words(article.updated_at) %> ago
+                Joined <%= time_ago_in_words(user.created_at) %> ago
               </small>
             </div>
           </div>
