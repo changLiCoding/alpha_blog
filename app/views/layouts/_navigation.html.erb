@@ -20,8 +20,6 @@
               <% end %>
               <%= link_to "All Articles", articles_path, {class: "dropdown-item"} %>
 
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
 
@@ -34,10 +32,9 @@
 
                 <%= link_to "View your profile", user_path(current_user), class: "dropdown-item" %>
                 <%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" %>
-                <%= link_to "Logout", logout_path, class: "dropdown-item", data: {turbo_method: :delete, turbo_confirm:'Are you sure?'} %>
+                <%= link_to "Delete your profile", user_path(current_user), class: "dropdown-item text-danger", data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
 
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <%= link_to "Logout", logout_path, class: "dropdown-item", data: {turbo_method: :delete, turbo_confirm:'Are you sure?'} %>
               </div>
             </li>
 
@@ -52,8 +49,6 @@
                 <%= link_to "Login", login_path, {class: "dropdown-item"} %>
                 <%= link_to "Sign Up", signup_path, {class: "dropdown-item"} %>
 
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
           <% end %>
