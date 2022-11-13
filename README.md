@@ -88,3 +88,12 @@ git branch and merge
 
 - git checkout -b 'branchName'
 - rails generate migration create_users
+
+Permissions functionality
+Admin users, moderators, regular users etc.
+CRM apps - permisions table
+Permissions field (String) - with values such as admin, moderator
+Admin column (boolean) - simplest solution
+
+add_admin_column
+rails generate migration add_admin_to_users
