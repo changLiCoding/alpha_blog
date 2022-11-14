@@ -16,5 +16,5 @@ class ApplicationController < ActionController::Base
     end
   end
 
-
+  # add_flash_types :notice, :alert
 end
