@@ -97,3 +97,22 @@ Admin column (boolean) - simplest solution
 
 add_admin_column
 rails generate migration add_admin_to_users
+
+Many to many associations:
+Automated testing - unit, functional, integration
+
+1. doctors and patients
+2. projects and emplyees
+3. social miedia: followers and followee's
+
+Unit tests Models, individual units of the application (like a validation) are working
+
+Functional tests: controllers, a function is working, for example is before_acrion stopping a non-logged in user from performing an action
+
+Integration tests: Full features, start to finish of a business process, example: a user signs up for the app
+
+Functional Tests
+Categories controller:
+-new category - new form (new.html.erb)
+-show category - show.html.erb
+-categories index (list) - index.html.erb
