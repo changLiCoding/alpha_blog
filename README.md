@@ -116,3 +116,10 @@ Categories controller:
 -new category - new form (new.html.erb)
 -show category - show.html.erb
 -categories index (list) - index.html.erb
+
+Ruby on Rails Components
+frount-end, back-end etc.
+-Associations, on to many, many to many
+-Front-end implementation and styling
+-Back-end implementation, REST
+-Git, GitHub, local dev and production (Heroku)
