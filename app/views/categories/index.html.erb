@@ -1,0 +1,25 @@
+
+ <main class="flex-shrink-0 mb-3" id="page-content">
+
+
+  <h1 class="text-center mt-4">Categories</h1>
+
+  <div class="flickr_pagination mt-3">
+    <%= will_paginate @categories, :container => false %>
+  </div>
+
+
+
+ <%= render 'categories/article' %>
+
+
+  <br>
+  <div class="container-md text-center justify-content-md-center">
+    <%= link_to "New Category", new_category_path, class: "btn btn-success " %>
+  </div>
+
+
+  <div class="flickr_pagination mt-3 mb-3">
+    <%= will_paginate @categories, :container => false %>
+  </div>
+</main>
