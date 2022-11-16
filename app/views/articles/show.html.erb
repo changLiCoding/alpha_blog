@@ -9,6 +9,13 @@
         <div class="card-header">
           Created by <span class="fst-italic"><%= @article.user.username %></span>
           <%= link_to gravatar_for(@article.user, size: 10), user_path(@article.user) %>
+
+          <%if @article.categories.any? %>
+            <div class="mt-2">
+
+            <%= render @article.categories  %>
+            </div>
+          <% end %>
         </div>
         <div class="card-body">
           <div class="card-text text-start"><%= simple_format(@article.description.capitalize) %></div>
